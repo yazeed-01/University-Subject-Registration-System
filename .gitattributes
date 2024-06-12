@@ -1,0 +1,5 @@
+*.php linguist-language=php
+*.html linguist-language=html
+
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
