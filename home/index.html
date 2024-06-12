@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+        <button id="button_current_subject" class="button_home">Current Subjects</button>
+        <button id="button_new_subject" class="button_home">Open New Subjects</button>
+
+        <script>
+            var button = document.getElementById("button_new_subject");
+            var button2 = document.getElementById("button_current_subject");
+
+            button.onclick = function() {
+                location.href = "../New_Subjects/index.html";
+            };
+
+            button2.onclick = function() {
+                location.href = "../current_Subjects/index.html";
+            };
+        </script>
+</body>
+</html>

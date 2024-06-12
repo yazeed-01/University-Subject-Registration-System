@@ -1,0 +1,25 @@
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+
+.button_home {
+    background-color: white;
+    border: 1px solid black;
+    height: 190px;
+    width: 288px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px black;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 200px;
+    margin-left: 120px;
+    font-size: 25px;
+
+}
