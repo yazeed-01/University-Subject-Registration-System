@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        $(document).ready(function() {
+            $("#input2").change(function() {
+                var number = $(this).val();
+                if (number !== "") {
+                    $.ajax({
+                        url: "insert.php",   
+                        type: "POST",
+                        data: { number: number },
+                        success: function(data) {
+                            $("#selectOptions").html(data);
+                        }
+                    });
+                } else {
+                    $("#selectOptions").html("");  
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <form method="post" action="insert.php">
+        <div class="input-row">
+        <input name="id" type="text" id="input1" placeholder="ID subject">
+        <input  name="stu_num" type="number" id="stuNumInput" placeholder="Students number">
+        <input name="section" type="number" min="1" max="10" id="input6" placeholder="Section"> 
+        <br>
+        <input name="date" type="text" id="input4" placeholder="Day">
+        <input type="time" id="startTime" name="startTime" placeholder="Start time" required>
+        <input type="time" id="endTime" name="endTime" placeholder="End time" required>
+
+        </div>
+        <button type="submit">Submit</button>    
+</body>
+</html>
